@@ -1,8 +1,8 @@
 import streamlit as st
-from llama_index import VectorStoreIndex, ServiceContext, Document
-from llama_index.llms import OpenAI
+from llama_index.core import VectorStoreIndex, ServiceContext, Document
+from llama_index.llms.openai import OpenAI
 import openai
-from llama_index import SimpleDirectoryReader
+from llama_index.core import SimpleDirectoryReader
 
 st.set_page_config(page_title="Chat with International Patent Classifications 2024.01 Section C - Chemistry; Metallurgy docs.", page_icon="", layout="centered", initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets.openai_key
